@@ -1,0 +1,18 @@
+# Optional MySQL database for local development (used by the "mysql" Spring profile).
+# The default setup uses an embedded H2 file database and does not need this.
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: brasa-mysql
+    environment:
+      MYSQL_DATABASE: brasa
+      MYSQL_USER: brasa
+      MYSQL_PASSWORD: brasa
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - brasa-mysql-data:/var/lib/mysql
+
+volumes:
+  brasa-mysql-data:

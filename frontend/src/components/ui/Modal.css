@@ -1,0 +1,81 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgb(8 5 4 / 0.55);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  animation: modal-fade 0.25s ease both;
+}
+
+.modal__dialog {
+  position: relative;
+  width: min(560px, 100%);
+  max-height: calc(100dvh - 48px);
+  overflow-y: auto;
+  border-radius: var(--radius-lg);
+  background: rgb(28 21 17 / 0.9);
+  animation: modal-in 0.45s var(--ease-spring) both;
+  outline: none;
+}
+
+.modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgb(255 255 255 / 0.2);
+  background: rgb(20 14 11 / 0.55);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s var(--ease-spring);
+}
+
+.modal__close:hover {
+  background: rgb(255 255 255 / 0.16);
+  transform: rotate(90deg);
+}
+
+@keyframes modal-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.97);
+  }
+}
+
+/* Phones: bottom sheet */
+@media (max-width: 640px) {
+  .modal {
+    place-items: end stretch;
+    padding: 0;
+  }
+  .modal__dialog {
+    width: 100%;
+    max-height: 92dvh;
+    border-radius: 28px 28px 0 0;
+    padding-bottom: env(safe-area-inset-bottom);
+    animation-name: sheet-in;
+  }
+  @keyframes sheet-in {
+    from {
+      transform: translateY(100%);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.order-summary {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.order-summary > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.order-summary dt {
+  color: var(--text-muted);
+}
+
+.order-summary dd {
+  margin: 0;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.order-summary__free {
+  color: var(--success);
+}
+
+.order-summary__total {
+  margin-top: 6px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.order-summary__total dt {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.order-summary__total dd {
+  font-size: 1.35rem;
+  font-weight: 700;
+}

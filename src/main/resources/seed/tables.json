@@ -1,0 +1,20 @@
+[
+  { "code": "B1", "seats": 1, "shape": "ROUND", "zone": "BAR", "x": 60, "y": 96, "width": 30, "height": 30 },
+  { "code": "B2", "seats": 1, "shape": "ROUND", "zone": "BAR", "x": 108, "y": 96, "width": 30, "height": 30 },
+  { "code": "B3", "seats": 1, "shape": "ROUND", "zone": "BAR", "x": 156, "y": 96, "width": 30, "height": 30 },
+  { "code": "B4", "seats": 1, "shape": "ROUND", "zone": "BAR", "x": 204, "y": 96, "width": 30, "height": 30 },
+  { "code": "B5", "seats": 1, "shape": "ROUND", "zone": "BAR", "x": 252, "y": 96, "width": 30, "height": 30 },
+  { "code": "W1", "seats": 2, "shape": "RECT", "zone": "WINDOW", "x": 58, "y": 176, "width": 44, "height": 44 },
+  { "code": "W2", "seats": 2, "shape": "RECT", "zone": "WINDOW", "x": 58, "y": 250, "width": 44, "height": 44 },
+  { "code": "W3", "seats": 2, "shape": "RECT", "zone": "WINDOW", "x": 58, "y": 324, "width": 44, "height": 44 },
+  { "code": "W4", "seats": 2, "shape": "ROUND", "zone": "MAIN", "x": 176, "y": 372, "width": 42, "height": 42 },
+  { "code": "M1", "seats": 4, "shape": "RECT", "zone": "MAIN", "x": 176, "y": 190, "width": 54, "height": 54 },
+  { "code": "M2", "seats": 4, "shape": "ROUND", "zone": "MAIN", "x": 280, "y": 190, "width": 56, "height": 56 },
+  { "code": "M3", "seats": 4, "shape": "RECT", "zone": "MAIN", "x": 384, "y": 190, "width": 54, "height": 54 },
+  { "code": "M4", "seats": 4, "shape": "RECT", "zone": "MAIN", "x": 176, "y": 290, "width": 54, "height": 54 },
+  { "code": "M5", "seats": 4, "shape": "ROUND", "zone": "MAIN", "x": 280, "y": 290, "width": 56, "height": 56 },
+  { "code": "M6", "seats": 4, "shape": "RECT", "zone": "MAIN", "x": 384, "y": 290, "width": 54, "height": 54 },
+  { "code": "L1", "seats": 6, "shape": "RECT", "zone": "LOUNGE", "x": 520, "y": 190, "width": 56, "height": 96 },
+  { "code": "L2", "seats": 6, "shape": "RECT", "zone": "LOUNGE", "x": 520, "y": 318, "width": 56, "height": 96 },
+  { "code": "L3", "seats": 6, "shape": "RECT", "zone": "MAIN", "x": 330, "y": 376, "width": 96, "height": 50 }
+]

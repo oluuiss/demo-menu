@@ -1,0 +1,210 @@
+[
+  {
+    "code": "GOLDEN_ONION", "category": "STARTERS", "price": "59.90", "image": "photo-1639024471283-03518883512d", "featured": true,
+    "texts": {
+      "pt": { "name": "Cebola Dourada", "description": "Cebola gigante empanada e frita, servida com molho cremoso da casa levemente picante." },
+      "en": { "name": "Golden Onion", "description": "Giant battered and fried onion, served with our creamy, slightly spicy house dip." },
+      "de": { "name": "Goldene Zwiebel", "description": "Riesige panierte und frittierte Zwiebel mit cremigem, leicht scharfem Haus-Dip." }
+    }
+  },
+  {
+    "code": "EMBER_WINGS", "category": "STARTERS", "price": "54.90", "image": "photo-1608039755401-742074f0548d", "featured": false,
+    "texts": {
+      "pt": { "name": "Asinhas na Brasa", "description": "Asinhas de frango marinadas, grelhadas na brasa e finalizadas com glaze de mel e pimenta." },
+      "en": { "name": "Ember Wings", "description": "Marinated chicken wings, charcoal-grilled and finished with a honey-chili glaze." },
+      "de": { "name": "Glut-Chicken-Wings", "description": "Marinierte Hähnchenflügel vom Holzkohlegrill mit Honig-Chili-Glasur." }
+    }
+  },
+  {
+    "code": "RUSTIC_FRIES", "category": "STARTERS", "price": "46.90", "image": "photo-1585109649139-366815a0d713", "featured": false,
+    "texts": {
+      "pt": { "name": "Batatas Rústicas", "description": "Batatas crocantes com cheddar derretido, bacon e cebolinha." },
+      "en": { "name": "Rustic Loaded Fries", "description": "Crispy potatoes with melted cheddar, bacon and spring onions." },
+      "de": { "name": "Rustikale Pommes", "description": "Knusprige Kartoffeln mit geschmolzenem Cheddar, Speck und Frühlingszwiebeln." }
+    }
+  },
+  {
+    "code": "SKEWER_TRIO", "category": "STARTERS", "price": "52.90", "image": "photo-1555939594-58d7cb561ad1", "featured": false,
+    "texts": {
+      "pt": { "name": "Trio de Espetinhos", "description": "Espetinhos de alcatra, frango e linguiça artesanal com farofa crocante." },
+      "en": { "name": "Skewer Trio", "description": "Beef, chicken and artisan sausage skewers with crunchy toasted manioc." },
+      "de": { "name": "Spieß-Trio", "description": "Spieße von Rind, Hähnchen und handgemachter Wurst mit knusprigem Maniokmehl." }
+    }
+  },
+  {
+    "code": "GARLIC_BREAD", "category": "STARTERS", "price": "24.90", "image": "photo-1573140401552-3fab0b24306f", "featured": false,
+    "texts": {
+      "pt": { "name": "Pão de Alho da Casa", "description": "Pão rústico assado na brasa com manteiga de alho e ervas." },
+      "en": { "name": "House Garlic Bread", "description": "Rustic bread toasted over the coals with garlic and herb butter." },
+      "de": { "name": "Knoblauchbrot", "description": "Rustikales Brot, über der Glut geröstet, mit Knoblauch-Kräuterbutter." }
+    }
+  },
+  {
+    "code": "SLOW_RIBS", "category": "GRILL", "price": "98.90", "image": "photo-1544025162-d76694265947", "featured": true,
+    "texts": {
+      "pt": { "name": "Costela ao Fogo Lento", "description": "Costela suína assada por 8 horas, laqueada com barbecue defumado. Acompanha fritas." },
+      "en": { "name": "Slow-Fire Ribs", "description": "Pork ribs roasted for 8 hours and glazed with smoky barbecue sauce. Served with fries." },
+      "de": { "name": "Spareribs vom langsamen Feuer", "description": "8 Stunden gegarte Schweinerippchen mit rauchiger BBQ-Glasur. Mit Pommes." }
+    }
+  },
+  {
+    "code": "RIBEYE_350", "category": "GRILL", "price": "112.90", "image": "photo-1600891964092-4316c288032e", "featured": true,
+    "texts": {
+      "pt": { "name": "Ancho Grelhado 350g", "description": "Corte ancho grelhado na parrilla com manteiga de ervas e dois acompanhamentos." },
+      "en": { "name": "Grilled Ribeye 350g", "description": "Ribeye cut grilled on the parrilla with herb butter and two sides." },
+      "de": { "name": "Ribeye vom Grill 350 g", "description": "Ribeye von der Parrilla mit Kräuterbutter und zwei Beilagen." }
+    }
+  },
+  {
+    "code": "PICANHA", "category": "GRILL", "price": "104.90", "image": "photo-1558030006-450675393462", "featured": false,
+    "texts": {
+      "pt": { "name": "Picanha na Brasa", "description": "Picanha fatiada na brasa com farofa de alho, vinagrete e arroz." },
+      "en": { "name": "Charcoal Picanha", "description": "Sliced picanha from the coals with garlic farofa, vinaigrette salsa and rice." },
+      "de": { "name": "Picanha von der Glut", "description": "Geschnittene Picanha mit Knoblauch-Farofa, Vinaigrette-Salsa und Reis." }
+    }
+  },
+  {
+    "code": "FILET_MIGNON", "category": "GRILL", "price": "129.90", "image": "photo-1546964124-0cce460f38ef", "featured": false,
+    "texts": {
+      "pt": { "name": "Filé Mignon ao Molho de Vinho", "description": "Medalhão de filé mignon com redução de vinho tinto e purê trufado." },
+      "en": { "name": "Filet Mignon, Red Wine Sauce", "description": "Filet mignon medallion with red wine reduction and truffled mash." },
+      "de": { "name": "Filet Mignon in Rotweinsauce", "description": "Filet-Mignon-Medaillon mit Rotweinreduktion und Trüffelpüree." }
+    }
+  },
+  {
+    "code": "MIXED_GRILL", "category": "GRILL", "price": "189.90", "image": "photo-1529692236671-f1f6cf9683ba", "featured": true,
+    "texts": {
+      "pt": { "name": "Parrillada para Dois", "description": "Picanha, ancho, linguiça e frango na brasa com três acompanhamentos. Serve duas pessoas." },
+      "en": { "name": "Mixed Grill for Two", "description": "Picanha, ribeye, sausage and chicken from the grill with three sides. Serves two." },
+      "de": { "name": "Grillplatte für Zwei", "description": "Picanha, Ribeye, Wurst und Hähnchen vom Grill mit drei Beilagen. Für zwei Personen." }
+    }
+  },
+  {
+    "code": "GRILLED_SALMON", "category": "FISH_POULTRY", "price": "92.90", "image": "photo-1467003909585-2f8a72700288", "featured": false,
+    "texts": {
+      "pt": { "name": "Salmão Grelhado", "description": "Filé de salmão com crosta de ervas, legumes na manteiga e purê de batata-doce." },
+      "en": { "name": "Grilled Salmon", "description": "Herb-crusted salmon fillet with buttered vegetables and sweet potato mash." },
+      "de": { "name": "Gegrillter Lachs", "description": "Lachsfilet mit Kräuterkruste, Buttergemüse und Süßkartoffelpüree." }
+    }
+  },
+  {
+    "code": "CHIMICHURRI_CHICKEN", "category": "FISH_POULTRY", "price": "68.90", "image": "photo-1532550907401-a500c9a57435", "featured": false,
+    "texts": {
+      "pt": { "name": "Frango Chimichurri", "description": "Peito de frango grelhado com chimichurri fresco e salada da estação." },
+      "en": { "name": "Chimichurri Chicken", "description": "Grilled chicken breast with fresh chimichurri and a seasonal salad." },
+      "de": { "name": "Chimichurri-Hähnchen", "description": "Gegrillte Hähnchenbrust mit frischem Chimichurri und saisonalem Salat." }
+    }
+  },
+  {
+    "code": "CRISPY_CHICKEN", "category": "FISH_POULTRY", "price": "62.90", "image": "photo-1626082927389-6cd097cdc6ec", "featured": false,
+    "texts": {
+      "pt": { "name": "Frango Crocante", "description": "Tiras de frango empanadas com molho honey mustard e batatas." },
+      "en": { "name": "Crispy Chicken Tenders", "description": "Breaded chicken strips with honey mustard sauce and fries." },
+      "de": { "name": "Knusprige Hähnchenstreifen", "description": "Panierte Hähnchenstreifen mit Honig-Senf-Sauce und Pommes." }
+    }
+  },
+  {
+    "code": "SMOKED_BURGER", "category": "BURGERS", "price": "58.90", "image": "photo-1568901346375-23c9450c58cd", "featured": true,
+    "texts": {
+      "pt": { "name": "Burger Defumado", "description": "Blend de 200g, cheddar, bacon crocante e cebola caramelizada no pão brioche." },
+      "en": { "name": "Smokehouse Burger", "description": "200g beef patty, cheddar, crispy bacon and caramelised onion on a brioche bun." },
+      "de": { "name": "Smokehouse-Burger", "description": "200 g Rindfleisch, Cheddar, knuspriger Speck und karamellisierte Zwiebeln im Brioche." }
+    }
+  },
+  {
+    "code": "DOUBLE_CHEDDAR", "category": "BURGERS", "price": "64.90", "image": "photo-1553979459-d2229ba7433b", "featured": false,
+    "texts": {
+      "pt": { "name": "Double Cheddar", "description": "Dois smash burgers, cheddar em dobro, picles e molho especial." },
+      "en": { "name": "Double Cheddar", "description": "Two smash patties, double cheddar, pickles and special sauce." },
+      "de": { "name": "Double Cheddar", "description": "Zwei Smash-Patties, doppelt Cheddar, Essiggurken und Spezialsauce." }
+    }
+  },
+  {
+    "code": "VEGGIE_BURGER", "category": "BURGERS", "price": "54.90", "image": "photo-1520072959219-c595dc870360", "featured": false,
+    "texts": {
+      "pt": { "name": "Burger Vegetariano", "description": "Hambúrguer de grão-de-bico e cogumelos, queijo coalho grelhado e maionese de ervas." },
+      "en": { "name": "Veggie Burger", "description": "Chickpea and mushroom patty, grilled coalho cheese and herb mayo." },
+      "de": { "name": "Veggie-Burger", "description": "Patty aus Kichererbsen und Pilzen, gegrillter Coalho-Käse und Kräutermayo." }
+    }
+  },
+  {
+    "code": "CAESAR_SALAD", "category": "SALADS", "price": "44.90", "image": "photo-1550304943-4f24f54ddde9", "featured": false,
+    "texts": {
+      "pt": { "name": "Salada Caesar com Frango", "description": "Alface romana, frango grelhado, parmesão, croutons e molho caesar." },
+      "en": { "name": "Chicken Caesar Salad", "description": "Romaine lettuce, grilled chicken, parmesan, croutons and Caesar dressing." },
+      "de": { "name": "Caesar Salad mit Hähnchen", "description": "Römersalat, gegrilltes Hähnchen, Parmesan, Croûtons und Caesar-Dressing." }
+    }
+  },
+  {
+    "code": "GRAIN_BOWL", "category": "SALADS", "price": "48.90", "image": "photo-1512621776951-a57141f2eefd", "featured": false,
+    "texts": {
+      "pt": { "name": "Bowl de Grãos", "description": "Quinoa, legumes grelhados, abacate, grão-de-bico e molho de tahine." },
+      "en": { "name": "Grain Bowl", "description": "Quinoa, grilled vegetables, avocado, chickpeas and tahini dressing." },
+      "de": { "name": "Grain Bowl", "description": "Quinoa, gegrilltes Gemüse, Avocado, Kichererbsen und Tahini-Dressing." }
+    }
+  },
+  {
+    "code": "LAVA_BROWNIE", "category": "DESSERTS", "price": "39.90", "image": "photo-1606313564200-e75d5e30476c", "featured": true,
+    "texts": {
+      "pt": { "name": "Brownie Vulcão", "description": "Brownie quente com sorvete de creme, calda de chocolate e nozes." },
+      "en": { "name": "Lava Brownie", "description": "Warm brownie with vanilla ice cream, chocolate sauce and walnuts." },
+      "de": { "name": "Lava-Brownie", "description": "Warmer Brownie mit Vanilleeis, Schokoladensauce und Walnüssen." }
+    }
+  },
+  {
+    "code": "BERRY_CHEESECAKE", "category": "DESSERTS", "price": "34.90", "image": "photo-1533134242443-d4fd215305ad", "featured": false,
+    "texts": {
+      "pt": { "name": "Cheesecake de Frutas Vermelhas", "description": "Cheesecake cremoso com calda artesanal de frutas vermelhas." },
+      "en": { "name": "Berry Cheesecake", "description": "Creamy cheesecake with a homemade red berry sauce." },
+      "de": { "name": "Beeren-Käsekuchen", "description": "Cremiger Käsekuchen mit hausgemachter Beerensauce." }
+    }
+  },
+  {
+    "code": "CHOCOLATE_CAKE", "category": "DESSERTS", "price": "36.90", "image": "photo-1578985545062-69928b1d9587", "featured": false,
+    "texts": {
+      "pt": { "name": "Bolo de Chocolate Belga", "description": "Camadas de bolo úmido e ganache de chocolate belga meio amargo." },
+      "en": { "name": "Belgian Chocolate Cake", "description": "Layers of moist sponge and dark Belgian chocolate ganache." },
+      "de": { "name": "Belgische Schokoladentorte", "description": "Saftige Biskuitschichten mit Ganache aus belgischer Zartbitterschokolade." }
+    }
+  },
+  {
+    "code": "ICE_CREAM", "category": "DESSERTS", "price": "24.90", "image": "photo-1563805042-7684c019e1cb", "featured": false,
+    "texts": {
+      "pt": { "name": "Taça de Sorvete", "description": "Três bolas de sorvete artesanal com farofa de castanhas." },
+      "en": { "name": "Ice Cream Sundae", "description": "Three scoops of artisan ice cream with a nut crumble." },
+      "de": { "name": "Eisbecher", "description": "Drei Kugeln handgemachtes Eis mit Nuss-Crumble." }
+    }
+  },
+  {
+    "code": "HOUSE_LEMONADE", "category": "DRINKS", "price": "16.90", "image": "photo-1621263764928-df1444c5e859", "featured": false,
+    "texts": {
+      "pt": { "name": "Limonada da Casa", "description": "Limonada com hortelã e gengibre, servida bem gelada." },
+      "en": { "name": "House Lemonade", "description": "Lemonade with mint and ginger, served ice cold." },
+      "de": { "name": "Hausgemachte Limonade", "description": "Limonade mit Minze und Ingwer, eiskalt serviert." }
+    }
+  },
+  {
+    "code": "ORANGE_JUICE", "category": "DRINKS", "price": "14.90", "image": "photo-1600271886742-f049cd451bba", "featured": false,
+    "texts": {
+      "pt": { "name": "Suco de Laranja", "description": "Suco de laranja natural, espremido na hora." },
+      "en": { "name": "Fresh Orange Juice", "description": "Freshly squeezed orange juice." },
+      "de": { "name": "Frischer Orangensaft", "description": "Frisch gepresster Orangensaft." }
+    }
+  },
+  {
+    "code": "SIGNATURE_COCKTAIL", "category": "DRINKS", "price": "32.90", "image": "photo-1514362545857-3bc16c4c7d1b", "featured": false,
+    "texts": {
+      "pt": { "name": "Drink Assinatura Brasa", "description": "Cachaça envelhecida, maracujá, mel defumado e limão." },
+      "en": { "name": "Brasa Signature Cocktail", "description": "Aged cachaça, passion fruit, smoked honey and lime." },
+      "de": { "name": "Brasa Signature-Cocktail", "description": "Gereifter Cachaça, Maracuja, geräucherter Honig und Limette." }
+    }
+  },
+  {
+    "code": "SPARKLING_WATER", "category": "DRINKS", "price": "8.90", "image": "photo-1523362628745-0c100150b504", "featured": false,
+    "texts": {
+      "pt": { "name": "Água com Gás", "description": "Garrafa de 500 ml com limão e gelo." },
+      "en": { "name": "Sparkling Water", "description": "500 ml bottle with lemon and ice." },
+      "de": { "name": "Mineralwasser mit Kohlensäure", "description": "500-ml-Flasche mit Zitrone und Eis." }
+    }
+  }
+]

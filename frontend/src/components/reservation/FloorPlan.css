@@ -1,0 +1,204 @@
+.floor {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.floor__room {
+  fill: rgb(255 255 255 / 0.025);
+  stroke: rgb(255 255 255 / 0.14);
+  stroke-width: 1.5;
+}
+
+.floor__bar {
+  fill: rgb(255 200 97 / 0.1);
+  stroke: rgb(255 200 97 / 0.35);
+}
+
+.floor__kitchen {
+  fill: url(#floor-hatch);
+  stroke: rgb(255 255 255 / 0.14);
+}
+
+.floor__window {
+  fill: var(--info);
+  opacity: 0.6;
+}
+
+.floor__lounge {
+  fill: rgb(125 42 30 / 0.18);
+  stroke: rgb(255 255 255 / 0.1);
+  stroke-dasharray: 5 5;
+}
+
+.floor__entrance {
+  fill: var(--ember);
+}
+
+.floor__label {
+  fill: var(--text-faint);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.floor__label--small {
+  font-size: 10px;
+}
+
+/* Tables */
+.floor__table {
+  cursor: default;
+  outline: none;
+}
+
+.floor__top,
+.floor__chair {
+  transition:
+    fill 0.25s ease,
+    stroke 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.floor__top {
+  stroke-width: 1.5;
+}
+
+.floor__code {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+/* Available */
+.floor__table.is-available {
+  cursor: pointer;
+}
+
+.floor__table.is-available .floor__top {
+  fill: rgb(79 209 139 / 0.16);
+  stroke: var(--success);
+}
+
+.floor__table.is-available .floor__chair {
+  fill: rgb(79 209 139 / 0.45);
+}
+
+.floor__table.is-available .floor__code {
+  fill: #c9f5dc;
+}
+
+.floor__table.is-available:hover .floor__top,
+.floor__table.is-available:focus-visible .floor__top {
+  fill: rgb(79 209 139 / 0.32);
+}
+
+.floor__table.is-available:focus-visible .floor__top {
+  stroke: var(--gold);
+  stroke-width: 3;
+}
+
+/* Selected */
+.floor__table.is-selected {
+  cursor: pointer;
+}
+
+.floor__table.is-selected .floor__top {
+  fill: url(#floor-selected);
+  stroke: var(--gold);
+  stroke-width: 2.5;
+  filter: drop-shadow(0 0 10px rgb(255 122 61 / 0.7));
+}
+
+.floor__table.is-selected .floor__chair {
+  fill: var(--gold);
+}
+
+.floor__table.is-selected .floor__code {
+  fill: #fff;
+}
+
+/* Occupied */
+.floor__table.is-occupied .floor__top {
+  fill: url(#floor-hatch);
+  stroke: rgb(255 107 94 / 0.55);
+}
+
+.floor__table.is-occupied .floor__chair {
+  fill: rgb(255 107 94 / 0.35);
+}
+
+.floor__table.is-occupied .floor__code {
+  fill: rgb(255 178 170 / 0.7);
+}
+
+/* Wrong size for the party */
+.floor__table.is-unsuitable {
+  opacity: 0.35;
+}
+
+.floor__table.is-unsuitable .floor__top {
+  fill: rgb(255 255 255 / 0.04);
+  stroke: rgb(255 255 255 / 0.3);
+  stroke-dasharray: 3 3;
+}
+
+.floor__table.is-unsuitable .floor__chair {
+  fill: rgb(255 255 255 / 0.25);
+}
+
+.floor__table.is-unsuitable .floor__code {
+  fill: var(--text-muted);
+}
+
+/* Legend */
+.floor-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.floor-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.floor-legend__swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  border: 1.5px solid;
+}
+
+.floor-legend__swatch--available {
+  background: rgb(79 209 139 / 0.2);
+  border-color: var(--success);
+}
+
+.floor-legend__swatch--selected {
+  background: linear-gradient(180deg, #ff9459, #dc5319);
+  border-color: var(--gold);
+}
+
+.floor-legend__swatch--occupied {
+  background: repeating-linear-gradient(45deg, rgb(255 255 255 / 0.1) 0 3px, transparent 3px 6px);
+  border-color: rgb(255 107 94 / 0.6);
+}
+
+.floor-legend__swatch--unsuitable {
+  border-style: dashed;
+  border-color: rgb(255 255 255 / 0.35);
+  opacity: 0.6;
+}

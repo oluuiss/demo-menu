@@ -1,0 +1,132 @@
+.profile-menu {
+  position: relative;
+}
+
+.profile-menu__avatar {
+  display: block;
+  width: 42px;
+  height: 42px;
+  padding: 2px;
+  border: 0;
+  border-radius: 50%;
+  background: conic-gradient(from 200deg, var(--gold), var(--ember), var(--wine), var(--gold));
+  cursor: pointer;
+  transition: transform 0.25s var(--ease-spring), box-shadow 0.25s ease;
+}
+
+.profile-menu__avatar:hover,
+.profile-menu__avatar.is-open {
+  transform: scale(1.06);
+  box-shadow: 0 0 0 4px rgb(255 122 61 / 0.2);
+}
+
+.profile-menu__avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 18%;
+  border: 2px solid var(--bg);
+}
+
+/* Nested backdrop-filters are unreliable (the header already blurs), so this surface is near-opaque. */
+.profile-menu__dropdown {
+  position: absolute;
+  top: calc(100% + 14px);
+  right: 0;
+  width: 260px;
+  padding: 8px;
+  border-radius: 22px;
+  background: linear-gradient(160deg, rgb(44 33 27 / 0.97), rgb(26 19 16 / 0.97));
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--highlight), 0 30px 60px -20px rgb(0 0 0 / 0.8);
+  transform-origin: top right;
+  animation: dropdown-in 0.35s var(--ease-spring) both;
+  z-index: 10;
+}
+
+.profile-menu__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 10px 14px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.profile-menu__head img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 18%;
+}
+
+.profile-menu__head div {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.profile-menu__head strong {
+  font-size: 0.95rem;
+}
+
+.profile-menu__head span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile-menu__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 11px 12px;
+  border: 0;
+  border-radius: 14px;
+  background: transparent;
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.profile-menu__item svg {
+  color: var(--text-muted);
+}
+
+.profile-menu__item:hover,
+.profile-menu__item:focus-visible {
+  background: rgb(255 255 255 / 0.08);
+}
+
+.profile-menu__item--danger,
+.profile-menu__item--danger svg {
+  color: #ffa198;
+}
+
+.profile-menu__sep {
+  height: 1px;
+  margin: 6px 4px;
+  background: var(--border);
+}
+
+@keyframes dropdown-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.94);
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-menu__dropdown {
+    position: fixed;
+    top: 84px;
+    right: 12px;
+    left: 12px;
+    width: auto;
+  }
+}

@@ -31,3 +31,15 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Local development database (H2) ###
+data/
+
+### Frontend ###
+node_modules/
+frontend/dist/
+# React build bundled into the jar via npm run build:backend
+src/main/resources/static/
+
+### Local preview config ###
+.claude/
