@@ -1,0 +1,40 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo-mark {
+  flex-shrink: 0;
+  filter: drop-shadow(0 4px 10px rgb(236 95 34 / 0.35));
+  transition: transform 0.4s var(--ease-spring);
+}
+
+.logo:hover .logo-mark {
+  transform: translateY(-1px) scale(1.05);
+}
+
+.logo__text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.logo__text span {
+  margin-left: 3px;
+  background: linear-gradient(180deg, #ffb070, var(--ember));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (max-width: 380px) {
+  .logo__text {
+    font-size: 1.15rem;
+  }
+}

@@ -1,0 +1,60 @@
+.locations-teaser {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: clamp(28px, 5vw, 56px);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.locations-teaser::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(60% 90% at 100% 0%, rgb(236 95 34 / 0.35), transparent 70%),
+    radial-gradient(50% 80% at 0% 100%, rgb(125 42 30 / 0.45), transparent 70%);
+}
+
+.locations-teaser h2 {
+  font-size: clamp(1.6rem, 3.4vw, 2.5rem);
+}
+
+.locations-teaser p {
+  color: var(--text-muted);
+}
+
+.locations-teaser__cities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.locations-teaser__cities li {
+  padding: 6px 13px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.08);
+  border: 1px solid var(--border);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.locations-teaser__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 760px) {
+  .locations-teaser {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

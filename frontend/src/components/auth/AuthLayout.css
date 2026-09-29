@@ -1,0 +1,148 @@
+.auth {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px var(--gutter) 32px;
+  overflow: hidden;
+}
+
+.auth__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgb(15 11 9 / 0.55), rgb(15 11 9 / 0.92) 75%),
+    url('https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1800&q=70') center /
+      cover,
+    var(--bg);
+}
+
+.auth__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: var(--container);
+  width: 100%;
+  margin-inline: auto;
+}
+
+.auth__top-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.auth__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.07);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.auth__back:hover {
+  color: var(--text);
+  background: rgb(255 255 255 / 0.12);
+}
+
+.auth__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  padding-block: 40px 16px;
+}
+
+.auth__card {
+  width: min(440px, 100%);
+  padding: clamp(24px, 5vw, 40px);
+  border-radius: 32px;
+  background: linear-gradient(160deg, rgb(52 38 31 / 0.6), rgb(22 16 13 / 0.55));
+  animation: fade-up 0.6s var(--ease) both;
+}
+
+.auth__title {
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  margin-bottom: 6px;
+}
+
+.auth__subtitle {
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+.auth__quote {
+  margin: 0;
+  max-width: 440px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--text-muted);
+  animation: fade-up 0.9s var(--ease) both;
+}
+
+/* Form pieces shared by login / recovery */
+.auth-form {
+  display: grid;
+  gap: 18px;
+}
+
+.auth-form__row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -6px;
+}
+
+.auth-form__link {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--ember);
+  text-decoration: none;
+}
+
+.auth-form__link:hover {
+  text-decoration: underline;
+}
+
+.auth-hint {
+  margin: 24px 0 0;
+  padding: 12px 16px;
+  border-radius: 14px;
+  background: rgb(255 255 255 / 0.05);
+  border: 1px solid var(--border);
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.auth-hint code {
+  font-weight: 600;
+  color: var(--gold);
+}
+
+@media (max-width: 560px) {
+  .auth__back span {
+    display: none;
+  }
+  .auth__back {
+    padding: 9px;
+  }
+  .auth__main {
+    justify-content: flex-start;
+    padding-top: 28px;
+  }
+}

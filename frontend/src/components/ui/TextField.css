@@ -1,0 +1,136 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.field__label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.01em;
+}
+
+.field__control {
+  position: relative;
+}
+
+.field__input,
+.select {
+  width: 100%;
+  height: 50px;
+  padding: 0 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgb(255 255 255 / 0.05);
+  box-shadow: inset 0 1px 2px rgb(0 0 0 / 0.25);
+  color: var(--text);
+  font: inherit;
+  font-size: 1rem;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.field__input::placeholder {
+  color: var(--text-faint);
+}
+
+.field__input:hover,
+.select:hover {
+  border-color: var(--border-strong);
+}
+
+.field__input:focus,
+.select:focus {
+  outline: none;
+  border-color: rgb(255 122 61 / 0.8);
+  background: rgb(255 255 255 / 0.08);
+  box-shadow: 0 0 0 4px rgb(255 122 61 / 0.18);
+}
+
+.select {
+  appearance: none;
+  padding-right: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23f7f1ea' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  cursor: pointer;
+}
+
+.select option {
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+
+.field__control:has(.field__toggle) .field__input {
+  padding-right: 96px;
+}
+
+.field__toggle {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.field__toggle:hover {
+  color: var(--text);
+  background: rgb(255 255 255 / 0.08);
+}
+
+.field--locked .field__input {
+  padding-right: 44px;
+  color: var(--text);
+  background: rgb(255 255 255 / 0.03);
+  border-style: dashed;
+  cursor: default;
+  box-shadow: none;
+}
+
+.field--locked .field__input:focus {
+  border-color: var(--border-strong);
+  box-shadow: none;
+}
+
+.field__lock {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  color: var(--text-faint);
+}
+
+.field--error .field__input {
+  border-color: rgb(255 107 94 / 0.8);
+}
+
+.field--error .field__input:focus {
+  box-shadow: 0 0 0 4px rgb(255 107 94 / 0.18);
+}
+
+.field__error,
+.field__hint {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.field__error {
+  color: var(--danger);
+  font-weight: 500;
+}
+
+.field__hint {
+  color: var(--text-faint);
+}

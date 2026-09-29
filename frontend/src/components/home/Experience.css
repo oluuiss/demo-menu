@@ -1,0 +1,120 @@
+.experience__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: clamp(36px, 6vw, 88px);
+  align-items: center;
+}
+
+.experience__media {
+  position: relative;
+}
+
+.experience__photo {
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, transparent 55%, rgb(15 11 9 / 0.6)),
+    url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=70') center / cover,
+    linear-gradient(135deg, var(--bg-elevated), var(--wine));
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.experience__stat {
+  position: absolute;
+  right: -20px;
+  bottom: 36px;
+  max-width: 210px;
+  padding: 20px 22px;
+  border-radius: var(--radius);
+}
+
+.experience__stat strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  line-height: 1;
+  margin-bottom: 6px;
+  background: linear-gradient(180deg, var(--gold), var(--ember));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.experience__stat span {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.experience__list {
+  list-style: none;
+  margin: 36px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+}
+
+.experience__item {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 8px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+  transition: padding-left 0.35s var(--ease);
+}
+
+.experience__item:hover {
+  padding-left: 6px;
+}
+
+.experience__index {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+  padding-top: 1px;
+  transition: color 0.3s ease;
+}
+
+.experience__item:hover .experience__index {
+  color: var(--ember);
+}
+
+.experience__text h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.experience__text h3 svg {
+  color: var(--ember);
+}
+
+.experience__text p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.94rem;
+}
+
+@media (max-width: 860px) {
+  .experience__grid {
+    grid-template-columns: 1fr;
+  }
+  .experience__photo {
+    aspect-ratio: 16 / 11;
+  }
+  .experience__stat {
+    right: 16px;
+    bottom: -24px;
+  }
+  .experience__copy {
+    margin-top: 12px;
+  }
+  .experience__item {
+    grid-template-columns: 44px 1fr;
+  }
+}
