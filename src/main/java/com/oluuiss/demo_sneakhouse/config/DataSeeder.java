@@ -71,10 +71,10 @@ public class DataSeeder implements CommandLineRunner {
 	private void seedDemoUser() {
 		AppUser user = users.findByEmailIgnoreCase(demoEmail).orElseGet(() -> {
 			log.info("Seeded demo user {}", demoEmail);
-			return new AppUser(demoEmail, "Lucas Andrade", passwordEncoder.encode(demoPassword));
+			return new AppUser(demoEmail, "Luis Porto", passwordEncoder.encode(demoPassword));
 		});
 		// Fictional demo data. The document numbers are well-known specimen/test values.
-		user.updateProfile("Lucas Andrade", "+55 11 94784-9239", LocalDate.of(1996, 3, 14), "/images/gatinho.jpeg",
+		user.updateProfile("Luis Porto", "+55 11 94784-9239", LocalDate.of(2005, 11, 25), "/images/gatinho.jpeg",
 				Map.of("BR", new IdentityDocument("CPF", "123.456.789-09"),
 						"US", new IdentityDocument("SSN", "123-45-6789"),
 						"DE", new IdentityDocument("PERSONALAUSWEIS", "T22000129")));

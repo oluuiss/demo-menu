@@ -67,6 +67,8 @@ class AuthControllerTests extends ApiTestSupport {
 		mvc.perform(get("/api/profile").session(session).header(HttpHeaders.ACCEPT_LANGUAGE, "pt-BR"))
 				.andExpect(status().isOk())
 				.andExpect(jsonPath("$.editable").value(false))
+				.andExpect(jsonPath("$.name").value("Luis Porto"))
+				.andExpect(jsonPath("$.birthDate").value("2005-11-25"))
 				.andExpect(jsonPath("$.document.type").value("CPF"))
 				.andExpect(jsonPath("$.document.number").value("•••.•••.•89-09"));
 		mvc.perform(get("/api/profile").session(session).header(HttpHeaders.ACCEPT_LANGUAGE, "en"))

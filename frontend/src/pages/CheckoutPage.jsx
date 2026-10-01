@@ -154,7 +154,7 @@ export default function CheckoutPage() {
                     className={`test-cards__card ${card.result === 'testDeclined' ? 'is-declined' : ''}`}
                     onClick={() => {
                       setForm((f) => ({
-                        cardholderName: f.cardholderName || 'Lucas Andrade',
+                        cardholderName: f.cardholderName || 'Luis Porto',
                         cardNumber: card.number,
                         expiry: f.expiry || '12/30',
                         cvv: f.cvv || '123',

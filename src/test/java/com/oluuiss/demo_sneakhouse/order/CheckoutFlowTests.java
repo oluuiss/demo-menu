@@ -20,7 +20,7 @@ import com.oluuiss.demo_sneakhouse.ApiTestSupport;
 /** Menu → cart → mock payment → order tracking, through the real API. */
 class CheckoutFlowTests extends ApiTestSupport {
 
-	private static final String VALID_CARD = "{\"cardholderName\":\"Lucas Andrade\",\"cardNumber\":\"4242 4242 4242 4242\",\"expiry\":\"12/39\",\"cvv\":\"123\"}";
+	private static final String VALID_CARD = "{\"cardholderName\":\"Luis Porto\",\"cardNumber\":\"4242 4242 4242 4242\",\"expiry\":\"12/39\",\"cvv\":\"123\"}";
 
 	private MockHttpSession session;
 

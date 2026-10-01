@@ -109,6 +109,9 @@
 }
 
 .menu-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   font-size: 0.7rem;
   font-weight: 600;
   color: #ffc9a6;
@@ -143,4 +146,91 @@
 .skeleton-line {
   height: 14px;
   margin-bottom: 12px;
+}
+
+/* Phones: compact horizontal cards (photo on the left, text on the right) */
+@media (max-width: 640px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .menu-card {
+    flex-direction: row;
+    min-height: 112px;
+    border-radius: 18px;
+  }
+
+  .menu-card:hover {
+    transform: none;
+  }
+
+  .menu-card:active {
+    transform: scale(0.98);
+  }
+
+  .menu-card__media {
+    width: 104px;
+    flex-shrink: 0;
+    aspect-ratio: auto;
+  }
+
+  /* The photo fills the column without dictating the card height */
+  .menu-card__media img {
+    position: absolute;
+    inset: 0;
+  }
+
+  .menu-card__tag {
+    display: none;
+  }
+
+  .menu-card__body {
+    min-width: 0;
+    padding: 12px 12px 10px 14px;
+  }
+
+  .menu-card__title {
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+
+  .menu-card__desc {
+    flex: none;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    -webkit-line-clamp: 2;
+  }
+
+  .menu-card__footer {
+    margin-top: auto;
+  }
+
+  .menu-card__price {
+    font-size: 0.95rem;
+  }
+
+  .menu-card__badge {
+    padding: 4px;
+  }
+
+  .menu-card__badge-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .menu-card__add {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu-card__add svg {
+    width: 16px;
+    height: 16px;
+  }
 }
