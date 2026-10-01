@@ -1,0 +1,14 @@
+# Render Blueprint for the Spring Boot backend (free plan).
+# Render → New → Blueprint → select this repository. When asked, paste the Neon connection string into DATABASE_URL.
+services:
+  - type: web
+    name: brasa-grill-api
+    runtime: docker
+    plan: free
+    region: virginia # closest Render region to the Neon database in São Paulo
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/menu?featured=true
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        sync: false # secret: set in the Render dashboard, never committed
