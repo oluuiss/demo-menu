@@ -179,3 +179,38 @@ Then from the project root:
 ```bash
 ./mvnw spring-boot:run
 ```
+
+## Deploy (Vercel + Render + Neon)
+
+Vercel only hosts static sites, so the app is split across three free services:
+
+| Part | Service | Config in this repo |
+| --- | --- | --- |
+| React site | **Vercel** | `vercel.json`: builds `frontend/` and forwards `/api/*` to Render |
+| Spring Boot API | **Render** (Docker, region Virginia) | `Dockerfile`, `render.yaml` |
+| Postgres database | **Neon** (project `brasa-grill`, São Paulo) | `application-prod.properties` |
+
+Because Vercel proxies `/api` to Render, the browser only ever talks to the Vercel domain and the login cookie
+works without any CORS setup. On first start the backend creates the tables and seeds the demo account, the menu
+and the floor plan, so `usuario@demo` / `usuario` works right away.
+
+**1. Database (Neon).** Copy the connection string from the Neon console (project `brasa-grill` → *Connect*,
+database `brasa`, connection pooling **off**). It looks like
+`postgresql://brasa:<password>@ep-....sa-east-1.aws.neon.tech/brasa?sslmode=require`.
+
+**2. Backend (Render).** *New → Blueprint* → pick this repository → paste the Neon string into `DATABASE_URL`.
+The service is created as `brasa-grill-api`. If Render gives it a different URL than
+`https://brasa-grill-api.onrender.com`, update the first rewrite in `vercel.json`.
+
+**3. Frontend (Vercel).** Import the repository; `vercel.json` already sets the install/build commands and the
+output folder, so no settings need to be changed.
+
+Notes about the free plans: the Render service sleeps after ~15 minutes without traffic, so the first request after
+that takes 30–60 s while it wakes up. Neon also scales to zero and wakes up in a moment. Data is permanent (Neon),
+and everyone shares the demo account, so visitors see each other's orders and reservations.
+
+To run the production profile locally against any Postgres:
+
+```bash
+DATABASE_URL="postgresql://user:password@host/db?sslmode=require" SPRING_PROFILES_ACTIVE=prod ./mvnw spring-boot:run
+```

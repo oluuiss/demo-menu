@@ -33,7 +33,7 @@ build/
 .vscode/
 
 ### Local development database (H2) ###
-data/
+/data/
 
 ### Frontend ###
 node_modules/
@@ -43,3 +43,7 @@ src/main/resources/static/
 
 ### Local preview config ###
 .claude/
+
+### Local secrets ###
+.env
+*.env

@@ -61,6 +61,12 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		<!-- Production database (Neon Postgres, "prod" profile) -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 		<!-- Optional: used by the "mysql" profile -->
 		<dependency>
 			<groupId>com.mysql</groupId>
