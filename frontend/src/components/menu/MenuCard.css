@@ -122,6 +122,26 @@
   white-space: nowrap;
 }
 
+/* Desktop/tablet: the "house favorite" badge sits on the photo so the footer only holds price + add. */
+.menu-card__badge--inline {
+  display: none;
+}
+
+.menu-card__badge--media {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  color: #ffd9bf;
+  background: rgb(15 11 9 / 0.6);
+  border-color: rgb(255 154 89 / 0.45);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.menu-card__badge--media svg {
+  color: var(--ember);
+}
+
 .menu-card__add {
   margin-left: auto;
   display: grid;
@@ -181,8 +201,13 @@
     inset: 0;
   }
 
-  .menu-card__tag {
+  .menu-card__tag,
+  .menu-card__badge--media {
     display: none;
+  }
+
+  .menu-card__badge--inline {
+    display: inline-flex;
   }
 
   .menu-card__body {
