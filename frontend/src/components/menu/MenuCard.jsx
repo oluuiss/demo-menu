@@ -1,5 +1,5 @@
 import { useI18n } from '../../i18n/I18nContext.jsx';
-import { PlusIcon } from '../ui/Icons.jsx';
+import { FlameIcon, PlusIcon } from '../ui/Icons.jsx';
 import './MenuCard.css';
 
 export default function MenuCard({ item, onSelect }) {
@@ -18,7 +18,12 @@ export default function MenuCard({ item, onSelect }) {
         <p className="menu-card__desc">{item.description}</p>
         <div className="menu-card__footer">
           <span className="menu-card__price">{formatPrice(item.price)}</span>
-          {item.featured && <span className="menu-card__badge">{t('menu.featured')}</span>}
+          {item.featured && (
+            <span className="menu-card__badge" title={t('menu.featured')}>
+              <FlameIcon size={12} />
+              <span className="menu-card__badge-text">{t('menu.featured')}</span>
+            </span>
+          )}
           <span className="menu-card__add" aria-hidden="true">
             <PlusIcon size={18} />
           </span>
