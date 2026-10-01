@@ -12,6 +12,12 @@ export default function MenuCard({ item, onSelect }) {
           <img src={item.imageUrl} alt="" loading="lazy" onError={(e) => (e.currentTarget.style.visibility = 'hidden')} />
         )}
         <span className="menu-card__tag">{t(`categories.${item.category}`)}</span>
+        {item.featured && (
+          <span className="menu-card__badge menu-card__badge--media">
+            <FlameIcon size={12} />
+            {t('menu.featured')}
+          </span>
+        )}
       </div>
       <div className="menu-card__body">
         <h3 className="menu-card__title">{item.name}</h3>
@@ -19,7 +25,7 @@ export default function MenuCard({ item, onSelect }) {
         <div className="menu-card__footer">
           <span className="menu-card__price">{formatPrice(item.price)}</span>
           {item.featured && (
-            <span className="menu-card__badge" title={t('menu.featured')}>
+            <span className="menu-card__badge menu-card__badge--inline" title={t('menu.featured')}>
               <FlameIcon size={12} />
               <span className="menu-card__badge-text">{t('menu.featured')}</span>
             </span>
